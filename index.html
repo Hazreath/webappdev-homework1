@@ -6,6 +6,7 @@
 
     <meta charset="UTF-8">
     <link rel="icon" href="res/images/volleyball-20.png">
+    <link rel="stylesheet" href="style.css">
     <title>My Dashboard</title>
 
 </head>
@@ -15,57 +16,90 @@
 
     <div class="search-container">
         <input type="text">
-        <button>Search</button>
+        <button>
+            <img width="20" height="20" src="res/images/search.png" alt="search">
+        </button>
     </div>
 
 </header>
 <section>
 
     <div class="dashboard">
-        <h3>My Dashboard</h3>
-        <ul>
+        <h2>My Dashboard</h2>
+        <ul id="feed">
+            <!-- FIRST POST -->
             <li>
-                <img width="20" height="20" src="res/images/me.png" alt="Profile picture 1">
-                <p>24.09.2020 21.30</p>
-                <div>
-                    <img width="20" height="20" src="res/images/me.png" alt="Profile picture">
-                    <img width="460" height="307" src="res/images/volleyball.jpg" alt="Picture 1">
-                    <p>Awesome block</p>
-                    <button>
-                        <img width="30" height="20" src="res/images/like.png" alt="Like 1">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img id="profile-pic" width="20" height="20" src="res/images/me.png" alt="Profile picture 1">
+                        <p class="post-author-name">Mario</p>
+                    </div>
+                    
+                    <p class="post-date">23.09.2020 19.00</p>
+                </div>
+                
+               
+                <div class="post-content">
+                    <img src="res/images/volleyball.jpg" alt="Picture 1">
+                    <p class="post-text">Awesome block</p>
+                    <button class="like-button">
+                        <img width="20" height="20" src="res/images/like.png" alt="Like 1">
                     </button>
                 </div>
             </li>
+
+            <!-- SECOND POST -->
             <li>
-                <img width="20" height="20" src="res/images/me.png" alt="Profile picture 2">
-                <p>22.09.2020 09.00</p>
-                <div>
-                    <p>One man can be a crucial ingredient on a team, but one man cannot make a team.</p>
-                    <button>
-                        <img width="30" height="20" src="res/images/like.png" alt="Like 1">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img id="profile-pic" width="20" height="20" src="res/images/me.png" alt="Profile picture 1">
+                        <p class="post-author-name">VolleyBoi</p>
+                    </div>
+                    
+                    <p class="post-date">22.09.2020 09.00</p>
+                </div>
+                
+               
+                <div class="post-content">
+                    
+                    <p class="post-text">
+                        One man can be a crucial ingredient on a team, but one man cannot make a team.
+                    </p>
+                    <button class="like-button">
+                        <img width="20" height="20" src="res/images/like.png" alt="Like 1">
                     </button>
-            </div>
+                </div>
             </li>
+
+
+            <!-- THIRD POST -->
             <li>
-                <img width="20" height="20" src="res/images/me.png" alt="Profile picture 3">
-                <p>20.09.2020 18.35</p>
-                <div>
-                    <img width="460" height="307" src="res/images/volleyball1.jpg" alt="Picture 2">
-                    <p>This is how you try to escape from block!</p>
-                    <button>
-                        <img width="30" height="20" src="res/images/like.png" alt="Like 1">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img id="profile-pic" width="20" height="20" src="res/images/me.png" alt="Profile picture 1">
+                        <p class="post-author-name">3st0ni3d</p>
+                    </div>
+                    
+                    <p class="post-date">23.09.2020 19.00</p>
+                </div>
+                
+               
+                <div class="post-content">
+                    <img src="res/images/volleyball1.jpg" alt="Picture 1">
+                    <p class="post-text">
+                        This is how you try to escape from block!
+                    </p>
+                    <button class="like-button">
+                        <img width="20" height="20" src="res/images/like.png" alt="Like 1">
                     </button>
                 </div>
             </li>
         </ul>
-
-
-
-
-
-
     </div>
 </section>
+<footer>
+    2020 - Homework 1 : Mario Liiva, Benjamin Camp, Maxime Moreau
+</footer>
 </body>
 
 </html> 

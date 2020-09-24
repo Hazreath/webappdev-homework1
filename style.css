@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Balsamic";
+    src: url(res/fonts/BalsamiqSans-Regular.ttf)
+}
+
+html {
+    background-color:rgb(37, 164, 248);
+    text-align: center;
+}
+
+div ul{
+    list-style: none;
+    background-color: white;
+    padding:25px;
+    width:50%;
+    margin:auto;
+    border-top-left-radius: 20px;
+}
+li {
+    border: 1px solid black;
+    margin-bottom: 20px;;
+}
+h2 {
+    text-align: center;
+    font-family: "Balsamic";
+}
+button {
+    border:none;
+    background-color: transparent;
+}
+footer {
+    position: fixed;
+    bottom:0;
+    width:100%;
+    background:white;
+}
+/****************** SEARCH *****************/
+header {
+    width:100%;
+    border-bottom: 1px solid black;
+    padding-bottom:10px;
+}
+/****************** POST HEADER *****************/
+.post-author, .post-header {
+    display:flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.post-author > p {
+    font-size:20px;
+    margin-right : 15px;
+}
+.post-author > img {
+    margin : 5px;
+}
+.post-date {
+    color:lightgray;
+    font-style: italic;
+}
+#profile-pic {
+    border:2px solid darkcyan;
+    border-radius: 20px;
+}
+/******************* CONTENT **************/
+.post-content {
+    text-align:justify;
+}
+
+.post-content > img {
+    width:100%;
+}
+
+.post-content + button {
+    border:none;
+}
+.like-button {
+    
+    border-radius:20px;
+    transition: 0.3s;
+}
+.like-button:hover {
+    background-color:darkcyan;
+    transition: 0.3s;
+}
+img + .post-text {
+    width:100%;
+    padding:0 10px 0 10px;
+    text-align:justify;
+}
