@@ -146,6 +146,7 @@ form {
 }
 
 form button[type="submit"] {
+    height:auto;
     color: #fff;
     background-color: #0D579B;
     align-self: center; /* don't take the 100% width of the flex parent */
