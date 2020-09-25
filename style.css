@@ -21,12 +21,18 @@ div ul{
     width:50%;
     margin:auto;
     border-top-left-radius: 20px;
+    -webkit-box-shadow: 5px 5px 15px 0px black;
+    -moz-box-shadow: 5px 5px 15px 0px black;
+    box-shadow: 5px 5px 15px 0px black;
 }
 li {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 20px;;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.41);
 }
-h2 {
+h1,h2 {
     text-align: center;
     font-family: "Balsamic";
 }
@@ -39,13 +45,30 @@ footer {
     bottom:0;
     width:100%;
     background:white;
+    font-size:13px;
+    opacity:0.5;
+    -webkit-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);
 }
 /****************** SEARCH *****************/
 header {
     width:100%;
     border-bottom: 1px solid black;
     padding-bottom:10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
 }
+
+input + button {
+    height:21px;
+}
+
+
+
 /****************** POST HEADER *****************/
 .post-author, .post-header {
     display:flex;
@@ -62,6 +85,7 @@ header {
 .post-date {
     color:lightgray;
     font-style: italic;
+    font-size:12px;
 }
 #profile-pic {
     border:2px solid darkcyan;
@@ -116,7 +140,7 @@ img + .post-text {
 }
 
 form {
-    width: 30%;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
@@ -128,10 +152,11 @@ form button[type="submit"] {
 }
 
 form .field {
+    
     margin-top: 16px;
     padding: 8px 16px;
 }
-
-.accent-link {
+/*.accent-link*/
+form ~ a {
     color: #4CC8FF;
 }
